@@ -1,6 +1,10 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text, Button } from '@tarojs/components'
-import { Loading } from '../../components'
+import { View, Text, Image, ScrollView } from '@tarojs/components'
+import { Loading } from '../../components/loading'
+import Banner from './banner/banner'
+import Policy from './policy/policy'
+import searchIcon from '../../assets/search.png'
+import { getWindowHeight } from '../../utils/style.js'
 import './home.css'
 
 export default class Home extends Component {
@@ -10,7 +14,7 @@ export default class Home extends Component {
   }
 
   state = {
-      loaded: false
+      loaded: true
   }
 
   componentWillMount () { }
@@ -24,14 +28,25 @@ export default class Home extends Component {
   componentDidHide () { }
 
   render () {
-    
+
     if (!this.state.loaded) {
         return <Loading />
     }
+    
     return (
-      <View className='index'>
-        <Text>Hello2 world!</Text>
-        <Button>详情页</Button>
+      <View className='home'>
+            <View className='homeSearchView'>
+                <Image src={searchIcon} className='searchIcon'/>
+                <Text className='searchTxt'>
+                    搜索商品，共783款好物
+                </Text>
+            </View>
+            <ScrollView
+                scrollY
+                style={{ height: getWindowHeight() }}>
+                <Banner/>
+                <Policy/>
+            </ScrollView>
       </View>
     )
   }
