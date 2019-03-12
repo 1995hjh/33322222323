@@ -3,6 +3,7 @@ import { View, Text, Image, ScrollView } from '@tarojs/components'
 import { Loading } from '../../components/loading'
 import Banner from './banner/banner'
 import Policy from './policy/policy'
+import Pin from './pin/pin'
 import searchIcon from '../../assets/search.png'
 import { getWindowHeight } from '../../utils/style.js'
 import './home.css'
@@ -46,6 +47,7 @@ export default class Home extends Component {
                 style={{ height: getWindowHeight() }}>
                 <Banner/>
                 <Policy/>
+                <Pin/>
             </ScrollView>
       </View>
     )

@@ -1,0 +1,50 @@
+.pinIcon {
+    width:90%;
+    height: 160px;
+    display: block;
+    margin: 0 auto 30px;
+    border-radius: 100px;
+}
+.pinSwiperView {
+    padding: 0 25px;
+    height: 260px;
+}
+.pinSwiperIcon {
+    width: 90%;
+    height: 160px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+.pinSwiperItem {
+    display: flex;
+    flex-direction: row;
+}
+.pinList {
+    flex: 1;
+    position: relative;
+}
+.pinPrice {
+    font-size: 24px;
+    line-height: 24px;
+    color: brown;
+    margin:0 10px 0 12px;
+    position: relative;
+}
+.pinOriginPrice {
+    color: #ccc;
+    text-decoration: line-through;
+    font-size: 24px;
+    line-height: 24px;
+    text-decoration-color: #ccc;
+}
+.pinNumView {
+    position: absolute;
+    background: #ff7d05;
+    top: 0;
+    left: 10px;
+    color: #fff;
+    font-size: 16px;
+    padding: 3px 8px;
+    border-radius: 2px;
+}
