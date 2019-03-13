@@ -1,0 +1,100 @@
+.OpaView {
+    padding: 40px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    margin: 20px 0;
+}
+.OpaItemView {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.opatIcon {
+    width: 32%;
+    height: 280px;
+    display: block;
+    border-radius: 5px;
+}
+.opatBFView {
+    width: 60%;
+    height: 242px;
+    display: block;
+    border-radius: 5px;
+    background: #fef5e5;
+}
+.opatBLView {
+    width: 36%;
+    height: 242px;
+    display: block;
+    border-radius: 5px;
+    background: #fef5e5;
+}
+.opatBFTitle {
+    height: 20%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 20px;
+    display: block;
+    box-sizing: border-box;
+}
+.bfIconView {
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+.opatBFIcon {
+    width:160px;
+    height: 160px;
+    display: block;
+    margin-right: 20px;
+}
+.opatJian {
+    font-weight: bold;
+    font-size: 28px;
+}
+.opatGet {
+    margin-top:14px;
+    color:#999999;
+    font-size:24px;
+    line-height:24px;
+}
+.opatBLIcon {
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin: 0 auto;
+}
+.shopBLView {
+    position: relative;
+    height: 80%;
+}
+.shoppingView {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #fd8925;
+    color: #fff;
+    width: 94px;
+    height: 94px;
+    border-radius: 47px;
+    bottom: 10px;
+    right: 10px;
+}
+.price {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+}
+.originPrice {
+    display: block;
+    font-size: 24px;
+    text-decoration: line-through;
+}

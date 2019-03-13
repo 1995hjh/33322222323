@@ -60,7 +60,7 @@ const list = [
 export default class Pin extends Component {
     render () {
         return (
-            <View>
+            <View className='pinView'>
                 {
                     picUrls.map((item, index) => (
                         <Image src={item} key={item} className='pinIcon'/>

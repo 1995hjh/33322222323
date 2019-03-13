@@ -4,6 +4,7 @@ import { Loading } from '../../components/loading'
 import Banner from './banner/banner'
 import Policy from './policy/policy'
 import Pin from './pin/pin'
+import Operation from './operation/operation'
 import searchIcon from '../../assets/search.png'
 import { getWindowHeight } from '../../utils/style.js'
 import './home.css'
@@ -44,10 +45,13 @@ export default class Home extends Component {
             </View>
             <ScrollView
                 scrollY
-                style={{ height: getWindowHeight() }}>
+                style={{ height: getWindowHeight() }}
+                className='homeScrollView'
+            >
                 <Banner/>
                 <Policy/>
                 <Pin/>
+                <Operation/>
             </ScrollView>
       </View>
     )
