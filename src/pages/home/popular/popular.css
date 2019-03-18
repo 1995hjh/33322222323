@@ -1,0 +1,67 @@
+.popularView {
+    background: #fff;
+    padding: 0 20px 20px;
+    margin-bottom: 20px;
+}
+.popularContent {
+    background: #fdefdf;
+    display: flex;
+    flex-direction: row;
+}
+.popularIcon {
+    width: 280px;
+    height: 280px;
+    margin-right: 20px;
+}
+.popularTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contentDd {
+    color:#000000;
+    font-size:28px;
+    font-weight:bold;
+    line-height:28px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    margin: 15px 0 25px;
+}
+.contentdt {
+    color:#999999;
+    font-size:24px;
+    line-height:24px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    margin-bottom: 30px;
+}
+.price {
+    color:#ab2b2b;
+    font-size:24px;
+    line-height:24px;
+}
+.listView {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.itemView {
+    width: 31%;
+}
+.itemIcon {
+    width: 100%;
+    height: 218px;
+    background: #fafafa;
+}
+.itemPriceTxt {
+    color:#333333;
+    font-size:24px;
+}
+.itemPrice {
+    color:#ab2b2b;
+    font-size:24px;
+}

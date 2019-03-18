@@ -14,7 +14,7 @@ export default class HomeTitle extends Component {
                 </View>
                 <View className='titleRightView'>
                     <Text className='titleTxt'>更多</Text>
-                    <Image src={ arrowRight } className='homeTitleIcon'/>
+                    <Image className='homeTitleIcon' src={ arrowRight }/>
                 </View>
             </View>
         )
