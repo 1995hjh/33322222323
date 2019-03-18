@@ -5,6 +5,8 @@ import Banner from './banner/banner'
 import Policy from './policy/policy'
 import Pin from './pin/pin'
 import Operation from './operation/operation'
+import BrandFactory from './brandFactory/brandFactory'
+import LimitShop from './limitShop/limitShop'
 import searchIcon from '../../assets/search.png'
 import { getWindowHeight } from '../../utils/style.js'
 import './home.css'
@@ -52,6 +54,8 @@ export default class Home extends Component {
                 <Policy/>
                 <Pin/>
                 <Operation/>
+                <BrandFactory/>
+                <LimitShop />
             </ScrollView>
       </View>
     )

@@ -1,0 +1,56 @@
+.brandView {
+    background: #fff;
+    margin: 20px 0;
+    padding-top: 10px;
+}
+.brandImageArea {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.brandItemView {
+    background: #f5fcfc;
+    padding-top: 20px;
+    width: 49%;
+    height: 306px;
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.brandTitle {
+    color:#333333;
+    font-size:28px;
+    line-height:28px;
+}
+.listView {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+.priceTxt {
+    color:#999999;
+    font-size:24px;
+    line-height:38px;
+}
+.itemTag {
+    margin-left:10rpx;
+    padding: 0 10px;
+    height:38px;
+    color:#ffffff;
+    font-size:24rpx;
+    font-weight:200;
+    line-height:38px;
+    text-align:center;
+    background:#ccb496;
+    border-radius:2rpx;
+}
+.itemIcon {
+    width: 100%;
+    height: 306px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

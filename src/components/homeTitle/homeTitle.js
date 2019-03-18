@@ -9,6 +9,9 @@ export default class HomeTitle extends Component {
         return (
             <View className='homeTitleView'>
                 <Text className='titleDesc'>{this.props.title}</Text>
+                <View className='homeContentView'>
+                    {this.props.children}
+                </View>
                 <View className='titleRightView'>
                     <Text className='titleTxt'>更多</Text>
                     <Image src={ arrowRight } className='homeTitleIcon'/>
