@@ -8,6 +8,7 @@ import Operation from './operation/operation'
 import BrandFactory from './brandFactory/brandFactory'
 import LimitShop from './limitShop/limitShop'
 import Popular from './popular/popular'
+import Category from './category/category'
 import searchIcon from '../../assets/search.png'
 import { getWindowHeight } from '../../utils/style.js'
 import './home.css'
@@ -58,6 +59,7 @@ export default class Home extends Component {
                 <BrandFactory/>
                 <LimitShop/>
                 <Popular/>
+                <Category/>
             </ScrollView>
       </View>
     )
