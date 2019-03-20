@@ -39,7 +39,7 @@
     text-overflow:ellipsis;
     margin-bottom: 30px;
 }
-.price {
+.pprice {
     color:#ab2b2b;
     font-size:24px;
     line-height:24px;
@@ -53,6 +53,7 @@
 }
 .itemView {
     width: 31%;
+    line-height:40px;
 }
 .itemIcon {
     width: 100%;
@@ -62,8 +63,10 @@
 .itemPriceTxt {
     color:#333333;
     font-size:24px;
+    margin:10px 0 0;
+    display:block;
 }
-.itemPrice {
+.limitOriginPrice {
     color:#ab2b2b;
     font-size:24px;
 }

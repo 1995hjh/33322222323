@@ -1,5 +1,5 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text, Image } from '@component'
+import { View, Text, Image } from '@tarojs/components'
 import './category.css'
 
 export default class Category extends Component {

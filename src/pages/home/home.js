@@ -1,6 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Image, ScrollView } from '@tarojs/components'
-import { Loading } from '../../components/loading'
+import { Loading } from '../../components'
 import Banner from './banner/banner'
 import Policy from './policy/policy'
 import Pin from './pin/pin'
@@ -9,6 +9,7 @@ import BrandFactory from './brandFactory/brandFactory'
 import LimitShop from './limitShop/limitShop'
 import Popular from './popular/popular'
 import Category from './category/category'
+import Recommend from './recommend/recommend'
 import searchIcon from '../../assets/search.png'
 import { getWindowHeight } from '../../utils/style.js'
 import './home.css'
@@ -60,6 +61,7 @@ export default class Home extends Component {
                 <LimitShop/>
                 <Popular/>
                 <Category/>
+                <Recommend/>
             </ScrollView>
       </View>
     )

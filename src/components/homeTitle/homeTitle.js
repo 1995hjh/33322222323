@@ -3,7 +3,7 @@ import { View, Text, Image } from '@tarojs/components'
 import arrowRight from './assets/arrow-right.png'
 import './homeTitle.css'
 
-export default class HomeTitle extends Component {
+ export default class HomeTitle extends Component {
 
     render () {
         return (
@@ -20,4 +20,4 @@ export default class HomeTitle extends Component {
         )
     }
 
-}
+} 

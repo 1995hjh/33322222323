@@ -36,7 +36,7 @@
     text-align: center;
     font-size: 28px;
     font-weight: bold;
-    padding-top: 20px;
+    padding-top: 5%;
     display: block;
     box-sizing: border-box;
 }
@@ -49,7 +49,7 @@
     align-items: center;
 }
 .opatBFIcon {
-    width:160px;
+    width: 160px;
     height: 160px;
     display: block;
     margin-right: 20px;
@@ -65,14 +65,15 @@
     line-height:24px;
 }
 .opatBLIcon {
-    width: 180px;
-    height: 180px;
+    width: 80%;
+    height: 100%;
     display: block;
     margin: 0 auto;
 }
 .shopBLView {
     position: relative;
-    height: 80%;
+    height: 70%;
+    margin-top: 5%;
 }
 .shoppingView {
     position: absolute;

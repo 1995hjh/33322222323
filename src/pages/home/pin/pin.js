@@ -1,6 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text, Swiper, SwiperItem, Image } from '@taojs/components'
-import { HomeTitle } from '../../../components/homeTitle/homeTitle'
+import { View, Text, Swiper, SwiperItem, Image } from '@tarojs/components'
+import { HomeTitle } from '../../../components'
 import './pin.css'
 
 const picUrls = [
