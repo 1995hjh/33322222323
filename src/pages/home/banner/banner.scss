@@ -1,0 +1,10 @@
+@import "../../../styles/theme.scss";
+
+.home-banner_swiper {
+  /*RN 的 Swiper 需要有高度，否则会报错*/
+  height: 340px;
+}
+.bannerIcon {
+  height:100%;
+  width:100%;
+}

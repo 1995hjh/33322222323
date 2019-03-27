@@ -1,7 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Image } from '@tarojs/components'
 import arrowRight from './assets/arrow-right.png'
-import './homeTitle.css'
+import './homeTitle.scss'
 
  export default class HomeTitle extends Component {
 

@@ -1,6 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View,  Text, Image } from '@tarojs/components'
-import './operation.css'
+import './operation.scss'
 
 export default class Operation extends Component {
 

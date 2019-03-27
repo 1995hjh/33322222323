@@ -3,7 +3,7 @@ import { ScrollView } from '@tarojs/components'
 import Profile from './profile/profile'
 import { getWindowHeight } from '../../utils/style'
 import Menu from './menu/menu'
-import './user.css'
+import './user.scss'
 
 
 export default class User extends Component {

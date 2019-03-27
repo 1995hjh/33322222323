@@ -1,7 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Image } from '@tarojs/components'
 import loading from './assets/loading.gif'
-import './index.css'
+import './index.scss'
 
 export default class Loading extends Component {
     render () {

@@ -1,6 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Image } from '@tarojs/components'
-import './category.css'
+import './category.scss'
 
 export default class Category extends Component {
     render () {

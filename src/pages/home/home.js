@@ -11,8 +11,7 @@ import Popular from './popular/popular'
 import Category from './category/category'
 import Recommend from './recommend/recommend'
 import searchIcon from '../../assets/search.png'
-import { getWindowHeight } from '../../utils/style.js'
-import './home.css'
+import './home.scss'
 
 export default class Home extends Component {
 
@@ -50,7 +49,6 @@ export default class Home extends Component {
             </View>
             <ScrollView
                 scrollY
-                style={{ height: getWindowHeight() }}
                 className='homeScrollView'
             >
                 <Banner/>

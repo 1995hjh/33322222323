@@ -1,3 +1,4 @@
+@import "../../../styles/theme.scss";
 .recommend-view {
     background: #fff;
     padding: 25px;
@@ -8,7 +9,6 @@
     text-align: center;
     margin-bottom: 25px;
     font-size: 28px;
-    display: block;
 }
 .recommend-list-view {
     display: flex;
@@ -27,23 +27,20 @@
     width: 100%;
     height:330px;
     background:#f4f4f4;
-    border-radius:4rpx;
+    border-radius:4px;
 }
 .recommend-icon-txt {
     position: absolute;
     bottom: 5px;
     left: 0;
     width: 100%;
-    display: block;
     height: 70px;
     line-height:  70px;
     color:#9e8962;
     font-size:24px;
     background:#f0ebe2;
     overflow:hidden;
-    white-space:nowrap;
     padding: 0 10px;
-    box-sizing: border-box; 
 }
 .recommend-desc {
     display: flex;
@@ -65,22 +62,12 @@
     flex: 1;
     color: #999;
     font-size: 24px;
-    line-height: 30px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display:-webkit-box;
-    -webkit-line-clamp:2;
-    -webkit-box-orient:vertical;
+    @include lamp-clamp(2);
 }
 .recommend-content-txt {
     color:#333333;
     font-size:28px;
     line-height:40px;
-    overflow:hidden;
-    white-space:nowrap;
-    -o-text-overflow:ellipsis;
-    text-overflow:ellipsis;
-    display: block;
     margin: 10px 0;
 }
 .recommend-price {
@@ -95,6 +82,4 @@
     font-weight: 200;
     line-height: 48px;
     text-decoration: line-through;
-    -webkit-text-decoration-color: #999999;
-    text-decoration-color: #999999;
 }

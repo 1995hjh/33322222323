@@ -1,7 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Image } from '@tarojs/components'
 import classNames from 'classnames'
-import '../user.css'
+import '../user.scss'
 
 const MENU_LIST = [{
         key: 'order',
@@ -78,8 +78,6 @@ export default class Menu extends Component {
 
     render() {
 
-        const { userInfo } = this.props;
-
         return (
             <View className='menuView'>
                {
@@ -87,7 +85,7 @@ export default class Menu extends Component {
                        let nth = (index + 1) % COUNT_LINE === 0
                        let lastLine = parseInt(index / COUNT_LINE) === parseInt(MENU_LIST.length / COUNT_LINE)
                        return (
-                           <View className={classNames('menuItem', nth && 'noRightBoder', lastLine && 'noBottomBorder')}>
+                           <View className={classNames('menuItem', nth && 'noRightBoder', lastLine && 'noBottomBorder')} key={item.text}>
                                <Image src={item.img} className='menuIcon' />
                                 <Text className='menuTxt'>{item.text}</Text>
                             </View>

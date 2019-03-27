@@ -1,7 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Image } from '@tarojs/components'
 import { HomeTitle } from '../../../components'
-import './brandFactory.css'
+import './brandFactory.scss'
 
 export default class BrandFactory extends Component {
     
@@ -13,7 +13,7 @@ export default class BrandFactory extends Component {
                     <View className='brandItemView'>
                         <View className='brandListView'>
                             <Text className='brandTitle'>来自海外制造商</Text>
-                            <View>
+                            <View className='brandTagView'>
                                 <Text className='priceTxt'>9.9元起</Text>
                                 <Text className='itemTag'>上新</Text>
                             </View>
@@ -23,7 +23,7 @@ export default class BrandFactory extends Component {
                     <View className='brandItemView'>
                         <View className='brandListView'>
                             <Text className='brandTitle'>来自CK制造商</Text>
-                            <View>
+                            <View className='brandTagView'>
                                 <Text className='priceTxt'>32.9元起</Text>
                                 <Text className='itemTag'>上新</Text>
                             </View>
@@ -33,7 +33,7 @@ export default class BrandFactory extends Component {
                     <View className='brandItemView'>
                         <View className='brandListView'>
                             <Text className='brandTitle'>来自新秀丽制造商</Text>
-                            <View>
+                            <View className='brandTagView'>
                                 <Text className='priceTxt'>34.9元起</Text>
                             </View>
                         </View>
@@ -42,7 +42,7 @@ export default class BrandFactory extends Component {
                     <View className='brandItemView'>
                         <View className='brandListView'>
                             <Text className='brandTitle'>来自Nine West制造商</Text>
-                            <View>
+                            <View className='brandTagView'>
                                 <Text className='priceTxt'>219元起</Text>
                             </View>
                         </View>

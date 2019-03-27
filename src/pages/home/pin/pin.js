@@ -1,7 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Swiper, SwiperItem, Image } from '@tarojs/components'
 import { HomeTitle } from '../../../components'
-import './pin.css'
+import './pin.scss'
 
 const picUrls = [
     'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1552378874720&di=66a17888638112c15f3654404e8b976e&imgtype=0&src=http%3A%2F%2Fpic8.nipic.com%2F20100713%2F1954049_091647155567_2.jpg',
@@ -63,9 +63,12 @@ export default class Pin extends Component {
             <View className='pinView'>
                 {
                     picUrls.map((item, index) => (
-                        <Image src={item} key={item} className='pinIcon'/>
+                        <View key={item} className='pinIconView'>
+                            <Image src={item} className='pinIcon'/>
+                        </View>
                     ))
                 }
+
                 <HomeTitle title='免邮拼团'
                     link='#'
                 />
@@ -73,7 +76,7 @@ export default class Pin extends Component {
                     className='pinSwiperView'
                     autoplay
                     indicatorDots
-                    indicatorActiveColor='rgba(178, 42, 49)'
+                    indicatorActiveColor='rgb(178, 42, 49)'
                 >
                     {
                         list.map((it, index) => (
@@ -82,12 +85,12 @@ export default class Pin extends Component {
                                     it.group.map((item) => (
                                         <View key={item.pic} className='pinList'>
                                             <Image src={item.pic} className='pinSwiperIcon'/>
-                                            <View>
+                                            <View className='pinPriceView'>
                                                 <Text className='pinPrice'>拼团价¥{item.price}</Text>
                                                 <Text className='pinOriginPrice'>¥{item.originPrice}</Text>
                                             </View>
                                             <View className='pinNumView'>
-                                                <Text>{item.userNum}人团</Text>
+                                                <Text className='pinNumTxt'>{item.userNum}人团</Text>
                                             </View>
                                         </View>
                                     ))

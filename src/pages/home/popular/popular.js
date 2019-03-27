@@ -1,7 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Image } from '@tarojs/components'
 import { HomeTitle, Tag } from '../../../components'
-import './popular.css'
+import './popular.scss'
 
 export default class Popular extends Component {
     static options = {
@@ -16,8 +16,8 @@ export default class Popular extends Component {
                         <Image src='https://yanxuan.nosdn.127.net/2eb0624b89d2cce1a5fb13187a0c10d8.jpg' className='popularIcon'/>
                         <View className='popularTxt'>
                             <Tag title='居家特惠'/>
-                            <Text className='contentDd'>全棉针织条纹四件套 新款</Text>
-                            <Text className='contentdt'>超柔针织棉，亲肤可裸睡</Text>
+                            <Text className='contentDd' numberOfLines={1}>全棉针织条纹四件套 新款</Text>
+                            <Text className='contentdt' numberOfLines={1}>超柔针织棉，亲肤可裸睡</Text>
                             <Text className='pprice'>¥269.00</Text>
                         </View>
                     </View>
